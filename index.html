@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz san valentin Mi morchi</title>
+    <style>
+    
+    .body{
+        background-color: crimson;
+        text-align: center;
+    }
+
+    .body__title{
+        color: white;
+    }
+
+    .body__img{
+        width: 100%;
+        border-radius: 20%;
+    }
+</style>
+
+
+
+
+</head>
+
+
+<body class= "body">
+   <h1 class = "body__title"> 😍Feliz san valentin Mi morchi🌹</h1> 
+   <figure>
+    <img src="1000760114.jpg" style="width: 300px;" 
+   alt="foto de nosotros" class="body__img">
+   <figcaption></figcaption>
+   </figure>
+   <button id="yes">💘Me amaras por siempre?💘</button>
+   <button id="no">😭No te amare mas!😭</button>
+
+   <script>
+    const botonsi= document.getElementById('yes')
+    const botonno= document.getElementById('no')
+
+    const meamaras = () => {
+        alert('Me alegra que hayas dicho que si😍');
+        alert('Esta canción es para ti Morchi😎😊');
+        location.href= 'https://www.youtube.com/watch?v=ridGylKQ0WY=47s';
+    }
+
+    const evitarelboton= () => {
+        botonno.style.position= 'absolute';
+        botonno.style.top= (Math.random() * window.innerHeight) + 'px';
+        botonno.style.left= (Math.random() * window.innerWidth) + 'px';
+    }
+
+    botonsi.addEventListener('click', meamaras);
+    botonno.addEventListener('mouseover', evitarelboton);
+   </script>
+</body>
+
+
+</html>
